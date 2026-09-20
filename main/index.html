@@ -5,42 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page1active.css">
     <title>Document</title>
 </head>
 
 <body>
     <nav id="navbar">
-        <svg id="menu-button" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-        </svg>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="nav-title">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1>Film Club</h1>
+        </div>
+        <div class="menu-container">
+            <svg id="menu-button" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Comparison</a></li>
+                <li><a href="#">Workshop</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
-        <img src="" alt="" class="">
+        <div class="header-content">
+            <h1>
+                Movies.<br>
+                Real discussions.<br>
+                Together.<br>
+            </h1>
+            <p>
+                The Film Club is a place where we share <br>
+                thoughts, discover great films and talk about<br>
+                the stories that matter.
+            </p>
+            <a href="#" class="cta-button">
+                Explore the film selection
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                </svg>
+            </a>
+        </div>
     </header>
     <div class="main">
         <div class="title-wrapper">
-            <h1 class="title">Welcome to My Website</h1>
+            <h1 class="title">Featured Films</h1>
+            <p>Three great movies, three different stories
+                 - find your next favorite.</p>
         </div>
         <div class="cards">
             <article class="card">
-                <h2>Card Title 1</h2>
-                <p>This is a description for card 1.</p>
+                <div>
+                    <h2>Oppenheimer</h2>
+                    <span>(2023)</span>
+                    <p>A tense and visually striking historical drama with a serious,
+                        atmospheric tone. It combines powerful performances,
+                        complex themes, and Christopher Nolan's distinctive
+                        nonlinear storytelling.</p>
+                </div>
             </article>
             <article class="card">
-                <h2>Card Title 2</h2>
-                <p>This is a description for card 2.</p>
+                <div>
+                    <h2>Interstellar</h2>
+                    <span>(2014)</span>
+                    <p>An emotional and visually spectacular sci-fi film that combines large-scale space exploration
+                        with deeply personal themes. Its ambitious visuals, memorable soundtrack, and thought-provoking
+                        ideas make it especially engaging.</p>
+                </div>
             </article>
             <article class="card">
-                <h2>Card Title 3</h2>
-                <p>This is a description for card 3.</p>
+                <div>
+                    <h2>The Truman Show</h2>
+                    <span>(1998)</span>
+                    <p>A clever and thought-provoking film that balances comedy with darker philosophical themes. Its
+                        unique concept, memorable performances, and commentary on media and privacy make it highly
+                        discussable.</p>
+                </div>
             </article>
         </div>
         <div class="content-wrapper">
