@@ -222,11 +222,16 @@ header {
     font-size: 1.2em;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: rgb(90, 55, 190);
+    background-color: rgb(107, 64, 224);
     width: 250px;
     text-align: center;
     padding: 20px 30px;
     border-radius: 80px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-content a:hover {
+    background-color: rgb(90, 55, 190);
 }
 
 .main {
@@ -239,6 +244,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 90vh;
 }
 
 .title-wrapper {
@@ -269,7 +275,6 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: auto;
     width: 90%;
     min-width: 400px;
     margin-bottom: 40px;
@@ -278,7 +283,7 @@ header {
 .card {
     background-color: rgb(227, 231, 237);
     width: 30%;
-    height: 50vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
