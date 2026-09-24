@@ -1,14 +1,26 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+}
+
+:root {
+  /* LIGHT MODE */
+  --bg-color: #f8fafc;
+  --grid-line: rgba(99, 102, 241, 0.08);
+  --spotlight: rgba(168, 85, 247, 0.15);
+  --text-color: #0f172a;
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
-    background-color: rgb(252, 249, 251);
+    background-color: rgb(227, 227, 227);
+    background-image:
+        linear-gradient(to right, var(--grid-line) 2px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-line) 2px, transparent 1px);
+    background-size: 64px 64px, 64px 64px;
 }
 
 nav,
@@ -19,7 +31,7 @@ footer {
 }
 
 nav {
-    background-color: rgb(6, 26, 40);
+    background-color: rgb(55, 33, 118);
     height: 7vh;
     display: flex;
     position: fixed;
@@ -41,6 +53,11 @@ nav {
 .nav-title h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
+}
+
+.nav-title h1 a {
+    text-decoration: none;
+    color: #f8fafc;
 }
 
 .logo {
@@ -109,11 +126,11 @@ nav ul {
     list-style-type: none;
     width: 25vw;
     transition: transform 0.3s ease-in-out;
-    background-color: rgb(6, 26, 40);
-    border-radius: 0 0 0 10px;
+    border-radius: 0 0 0 8px;
     transform: translateX(100%);
     padding: 25px;
     padding-top: 15px;
+    background-color: rgb(55, 33, 118);
 }
 
 .active {
@@ -187,6 +204,7 @@ header {
     background-image: url('images/header.png');
     background-position: center;
     background-size: cover;
+    border-bottom: 1px solid rgb(107, 64, 224);
 }
 
 .header-content {
@@ -283,7 +301,7 @@ header {
 .card {
     background-color: rgb(227, 231, 237);
     width: 30%;
-    height: 75vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,16 +349,18 @@ header {
 .card div {
     background-color: rgb(255, 255, 255);
     margin-top: auto;
-    border-radius: 40px;
-    height: 60%;
+    height: 45%;
     width: 100%;
     transition: transform 0.5s ease-in-out;
     transform: translateY(101%);
     border: 1px solid rgb(224, 240, 240);
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover div {
-    transform: translateY(0);
+    transform: translateY(1%);
 }
 
 .card h2 {
@@ -407,21 +427,31 @@ header {
 }
 
 footer {
-    background-color: rgb(6, 26, 40);
+    background-color: rgb(55, 33, 118);
     color: #fff;
     height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 -5px 30px rgba(80, 47, 170, 0.5);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 600px) {
     .card {
-        min-width: 400px;
+        min-width: 350px;
         margin-bottom: 40px;
         margin-left: auto;
         margin-right: auto;
         animation-delay: 0.1s;
+        height: 70vh;
+    }
+
+    .card div {
+        height: 65%;
+    }
+
+    .card:hover div {
+        transform: translateY(0%);
     }
 
     .header-content h1 {
@@ -437,9 +467,33 @@ footer {
         padding: 0;
         padding-top: 15px;
         padding-bottom: 15px;
+        border-radius: 0;
+        transform: translateY(-150%) translateX(0);
+        z-index: 0;
+    }
+    
+    nav ul li {
+        opacity: 0;
+    }
+
+    nav svg {
+        z-index: 100;
+    }
+
+    nav .nav-title {
+        z-index: 100;
     }
 
     nav ul li {
         width: 75vw;
+    }
+
+    .active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .active li {
+        opacity: 1;
     }
 }

@@ -4,9 +4,18 @@ table {
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    border: 1px solid rgb(213, 220, 235);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-collapse: collapse;
     overflow: hidden;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    min-width: 1250px;
+    min-height: 1000px;
+}
+
+.table-wrapper {
+    margin-bottom: 100px;
 }
 
 .main {
@@ -14,20 +23,20 @@ table {
 }
 
 table img {
-    width: 100px;
+    width: 200px;
 }
 
 .img-wrapper {
     overflow: hidden;
-    width: 100px;
-    height: 150px;
+    width: 200px;
+    height: 300px;
     border-radius: 15px;
 }
 
 table td {
-    border: 1px solid rgb(213, 220, 235);
-    width: 150px;
-    height: 100px;
+    border: 1px solid rgba(167, 170, 175, 0.25);
+    width: 300px;
+    height: 200px;
     text-align: center;
 }
 
@@ -45,8 +54,7 @@ thead td {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 200px;
-    background-color: rgb(227, 229, 231);
+    height: 400px;
 }
 
 thead h1 {
@@ -66,6 +74,10 @@ thead td:nth-child(3) {
 thead td:nth-child(4) {
     border-right: none;
     border-left: none;
+}
+
+tbody td {
+    font-size: 24px;
 }
 
 tbody tr:nth-child(3) td {
@@ -94,4 +106,49 @@ tbody tr:nth-child(3) td:nth-child(1) {
 
 tbody tr:nth-child(3) td:nth-child(4) {
     border-right: none;
+}
+
+.title-wrapper {
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-collapse: collapse;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-wrapper p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+tbody h1 {
+    font-size: 24px;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .table-wrapper {
+        max-height: 95vh;
+        max-width: 95vw;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        display: flex;
+    }
+
+    .title-wrapper {
+        width: 85%;
+        height: 30vh;
+    }
 }
