@@ -20,3 +20,26 @@ const observer = new IntersectionObserver((entries, observer) => {
 });
 
 animatedElements.forEach(el => observer.observe(el));
+
+
+
+const workshopCards = document.querySelectorAll('.workshop_card');
+
+const workshopObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+    }
+
+  });
+
+}, {
+  threshold: 0.2
+});
+
+workshopCards.forEach((el, index) => {
+  el.style.transitionDelay = `${index * 150}ms`;
+  workshopObserver.observe(el);
+});
