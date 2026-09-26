@@ -31,18 +31,34 @@ table img {
     width: 200px;
     height: 300px;
     border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+.img-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.img-wrapper img {
+    height: 300px;
+    width: auto;
+    min-width: 200px;
+}
+
+table:has(thead td:nth-child(2) .img-wrapper:hover) tbody tr td:nth-child(2) {color: rgb(90, 55, 190);}
+table:has(thead td:nth-child(3) .img-wrapper:hover) tbody tr td:nth-child(3) {color: rgb(90, 55, 190);}
+table:has(thead td:nth-child(4) .img-wrapper:hover) tbody tr td:nth-child(4) {color: rgb(90, 55, 190);}
 
 table td {
     border: 1px solid rgba(167, 170, 175, 0.25);
     width: 300px;
     height: 200px;
     text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 thead tr {
     display: flex;
-    
 }
  
 thead td {
@@ -138,7 +154,7 @@ tbody h1 {
     padding: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     .table-wrapper {
         max-height: 95vh;
         max-width: 95vw;
@@ -150,5 +166,11 @@ tbody h1 {
     .title-wrapper {
         width: 85%;
         height: 30vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .title-wrapper {
+        font-size: 20px;
     }
 }

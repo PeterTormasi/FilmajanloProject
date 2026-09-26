@@ -6,8 +6,6 @@ MenuButton.addEventListener('click', () => {
     MenuButton.classList.toggle('open');
 });
 
-const animatedElements = document.querySelectorAll('.card');
-
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -16,30 +14,15 @@ const observer = new IntersectionObserver((entries, observer) => {
     }
   });
 }, {
-  threshold: 0.75
+  threshold: 0.5
 });
 
-animatedElements.forEach(el => observer.observe(el));
-
-
-
+const movieCards = document.querySelectorAll('.card');
 const workshopCards = document.querySelectorAll('.workshop_card');
 
-const workshopObserver = new IntersectionObserver((entries) => {
+movieCards.forEach(el => observer.observe(el));
+workshopCards.forEach(el => observer.observe(el));
 
-  entries.forEach(entry => {
-
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-    }
-
-  });
-
-}, {
-  threshold: 0.2
-});
-
-workshopCards.forEach((el, index) => {
-  el.style.transitionDelay = `${index * 150}ms`;
-  workshopObserver.observe(el);
-});
+function navigateTo(url) {
+  window.location.href = url;
+}
