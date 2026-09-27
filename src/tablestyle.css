@@ -4,12 +4,8 @@ table {
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     border-collapse: collapse;
     overflow: hidden;
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.01);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     width: 1000px;
     height: auto;
 }
@@ -20,24 +16,6 @@ table {
 
 .main {
     padding-top: 7vh;
-}
-
-.img-wrapper {
-    overflow: hidden;
-    width: 125px;
-    height: 200px;
-    border-radius: 15px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.img-wrapper:hover {
-    transform: scale(1.05);
-}
-
-.img-wrapper img {
-    height: 200px;
-    width: auto;
 }
 
 table:has(thead td:nth-child(2) .img-wrapper:hover) tbody tr td:nth-child(2) {
@@ -160,12 +138,21 @@ tbody h2 {
     padding: 20px;
 }
 
+.table-wrapper {
+    width: auto;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    overflow-x: auto;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 @media (max-width: 1200px) {
     .table-wrapper {
         width: 95%;
-        margin-bottom: 40px;
-        padding: 0 10px;
-        overflow-x: scroll;
     }
 
     .title-wrapper {
