@@ -455,7 +455,43 @@ main {
     border: 1px solid var(--off-white);
 }
 
-.card div {
+.card .tags {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.tags span {
+    width: 30%;
+    height: 100%;
+    font-size: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-Biopic, .tag-Historical-Drama {
+    background-color: #D97706;
+}
+
+.tag-Science, .tag-Human-Survival {
+    background-color: #EA580C;
+}
+
+.tag-Sci-Fi, .tag-Relativity {
+    background-color: #1E3A8A;
+}
+
+.tag-Media-Satire, .tag-Psychological-Drama, .tag-Reality-v-Illusion {
+    background-color: #7C3AED;
+}
+
+.card .info {
     background-color: var(--white);
     margin-top: auto;
     height: 45%;
@@ -468,23 +504,23 @@ main {
     box-shadow: 0 4px 30px var(--shadow);
 }
 
-.card:hover div {
+.card:hover .info {
     transform: translateY(1%);
 }
 
-.card h2 {
+.card .info h2 {
     color: var(--navy);
     font-size: 1.5em;
     margin-top: 20px;
 }
 
-.card span {
+.card .info span {
     color: var(--purple-accent);
     font-size: 0.75em;
     margin-top: 10px;
 }
 
-.card p {
+.card .info p {
     color: var(--navy-dark);
     font-size: 0.9em;
     padding: 20px;
@@ -515,8 +551,6 @@ main {
     width: 90%;
     height: auto;
     border: 1px solid var(--white);
-    border-collapse: collapse;
-    overflow: hidden;
     backdrop-filter: blur(5px);
     background: var(--glass-bg);
     box-shadow: 0 4px 30px var(--shadow);
@@ -525,17 +559,24 @@ main {
     padding: 30px;
 }
 
-.content-wrapper:hover {
+.content-wrapper article:hover {
     transform: translateY(-10px);
     box-shadow: 0px 8px 12px var(--shadow);
 }
 
+.content-wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.content-wrapper .content-title {
+    font-size: 36px;
+}
+
 .content-wrapper article {
-    width: 96%;
+    width: 95%;
     padding: 20px;
-    border: 1px solid var(--glass-bg);
-    border-collapse: collapse;
-    overflow: hidden;
+    border: 1px solid var(--white);
     backdrop-filter: blur(5px);
     background: var(--glass-bg);
     box-shadow: 0 4px 30px var(--shadow);
@@ -545,13 +586,22 @@ main {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    opacity: 0;
+}
+
+.content-wrapper .is-visible {
+    opacity: 1;
 }
 
 .content-wrapper .head {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .content-wrapper .head span {
@@ -559,6 +609,7 @@ main {
     background-color: var(--green);
     border-radius: 50%;
     margin-left: auto;
+    margin-bottom: auto;
 }
 
 .content-wrapper .divider-line {
@@ -567,6 +618,18 @@ main {
     background-color: var(--light-gray);
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.content-wrapper .theme {
+    margin-bottom: 20px;
+}
+
+.content-wrapper ul {
+    margin-left: 20px;
+}
+
+.content-wrapper ul li:nth-child(1) {
+    margin-bottom: 10px;
 }
 
 footer {
@@ -589,7 +652,7 @@ footer {
         height: 50vh;
     }
 
-    .card div {
+    .card .info {
         height: 60%;
         transform: translateY(1%);
     }
@@ -663,6 +726,22 @@ footer {
 
     .title-wrapper p {
         width: 90%;
+    }
+
+    .content-wrapper {
+        border-radius: 0;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        padding: 0;
+    }
+
+    .content-wrapper article {
+        width: 85%;
+    }
+
+    .content-title {
+        margin-top: 25px;
     }
 }
 

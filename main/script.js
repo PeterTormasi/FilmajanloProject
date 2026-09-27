@@ -19,9 +19,11 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 const movieCards = document.querySelectorAll('.card');
 const workshopCards = document.querySelectorAll('.workshop_card');
+const programCards = document.querySelectorAll('.program-card');
 
 movieCards.forEach(el => observer.observe(el));
 workshopCards.forEach(el => observer.observe(el));
+programCards.forEach(el => observer.observe(el));
 
 function navigateTo(url) {
   window.location.href = url;
