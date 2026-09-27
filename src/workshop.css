@@ -1,4 +1,3 @@
-
 :root {
     --navy: rgb(6, 26, 40);
     --light-navy: rgb(9, 38, 59);
@@ -13,7 +12,7 @@
 
     --purple-accent: rgb(95, 65, 205);
     --purple-accent-hover: rgb(77, 53, 167);
-    
+
     --text: rgb(25, 32, 45);
     --text-light: rgb(255, 255, 255);
 
@@ -23,7 +22,7 @@
     --main-bg: rgba(255, 255, 255, 0);
     --card-border: rgba(90, 55, 190, 0.15);
     --workshop-cardh2: rgb(90, 55, 190);
-    --workshop-border:rgba(6, 26, 40, 0.08);
+    --workshop-border: rgba(6, 26, 40, 0.08);
     --workshop-image: rgba(0, 0, 0, 0.08);
     --workshop-imgbr: rgba(0, 0, 0, 0.06);
 }
@@ -190,6 +189,25 @@ header {
 }
 
 .firstdesign:hover {
+    transform: scale(1.05);
+}
+
+.code-snippet {
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px var(--workshop-image);
+    border: 1px solid var(--workshop-imgbr);
+    display: flex;
+    margin-top: 10px;
+}
+
+.code-snippet img {
+    width: 250px;
+    height: auto;
+}
+
+.code-snippet:hover {
     transform: scale(1.05);
 }
 
