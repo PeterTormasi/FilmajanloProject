@@ -8,6 +8,8 @@ Egy webes projekt, ami egy filmklub oldalát mutatja be. Az oldal bemutatja a kl
 - **Comparison (`comparison.html`)** – A három film (Oppenheimer, Interstellar, The Truman Show) összehasonlító táblázata hangulat, műfaj és filmes technika szerint.
 - **Workshop (`workshop.html`)** – A weboldal fejlesztésének menetét bemutató műhelynapló, szakaszokra bontva.
 - **Sources (`sources.html`)** – A projektben felhasznált képek forrásainak listája.
+- <img width="1891" height="949" alt="image" src="https://github.com/user-attachments/assets/df716d00-f44b-474d-99c4-1b679a15900a" />
+
 
 ## Technológiák
 
@@ -24,4 +26,5 @@ Egy webes projekt, ami egy filmklub oldalát mutatja be. Az oldal bemutatja a kl
 ## Licenc
 
 &copy; 2026 Film Club. Minden jog fenntartva.
+
 
