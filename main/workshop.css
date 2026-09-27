@@ -1,6 +1,42 @@
+
+:root {
+    --navy: rgb(6, 26, 40);
+    --light-navy: rgb(9, 38, 59);
+    --light-navy-hover: rgb(13, 51, 78);
+    --navy-dark: rgb(0, 16, 32);
+    --purple: rgb(32, 16, 64);
+    --navy-transparent: rgba(6, 26, 40, 0.05);
+
+    --white: rgb(255, 255, 255);
+    --off-white: rgb(252, 249, 251);
+    --light-gray: rgb(227, 231, 237);
+
+    --purple-accent: rgb(95, 65, 205);
+    --purple-accent-hover: rgb(77, 53, 167);
+    --blue: rgb(35, 125, 210);
+    --orange: rgb(243, 107, 69);
+    --green: rgb(30, 150, 115);
+
+    --text: rgb(25, 32, 45);
+    --text-light: rgb(255, 255, 255);
+
+    --shadow: rgba(0, 0, 0, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --main-bg: rgba(255, 255, 255, 0);
+    --card-border: rgba(90, 55, 190, 0.15);
+    --workshop-cardh2: rgb(90, 55, 190);
+    --workshop-border:rgba(6, 26, 40, 0.08);
+    --workshop-image: rgba(0, 0, 0, 0.08);
+    --workshop-imgbr: rgba(0, 0, 0, 0.06);
+}
+
+
+
+
 header {
     padding-top: 7vh;
-    background-color: #444;
+    background-color: var(--navy);
     height: 50vh;
     background-image: url('images/aiworksshopbg.png');
     background-position: center;
@@ -13,9 +49,9 @@ header {
 
 .header-content {
     backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--glass-bg);
+    box-shadow: 0 4px 30px var(--shadow);
+    border: 1px solid var(--glass-border);
     width: 40%;
     height: 50%;
     margin: auto;
@@ -27,13 +63,13 @@ header {
 
 .header-content h1 {
     margin: 0;
-    color: #0F172A;
+    color: var(--text);
 }
 
 .header-content span {
     width: 50%;
     height: 2px;
-    background-color: #0F172A;
+    background-color: var(--text);
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -41,7 +77,7 @@ header {
 .header-content p {
     width: 100%;
     margin: 0;
-    color: #0F172A;
+    color: var(--text);
 }
 
 .main {
@@ -55,9 +91,9 @@ header {
     padding-bottom: 7vh;
     gap: 4vh;
     backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--main-bg);
+    box-shadow: 0 4px 30px var(--shadow);
+    border: 1px solid var(--glass-border);
 }
 
 .workshop_card {
@@ -65,10 +101,10 @@ header {
     min-height: 250px;
     height: auto;
     padding: 28px 32px;
-    background-color: #ffffff;
-    border: 1px solid rgba(90, 55, 190, 0.15);
+    background-color: var(--white);
+    border: 1px solid var(--card-border);
     border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(6, 26, 40, 0.07);
+    box-shadow: 0 10px 30px var(--navy-transparent);
     box-sizing: border-box;
     opacity: 0;
     transform: translateY(-80px);
@@ -83,7 +119,7 @@ header {
 
 .workshop_card.is-visible:hover {
     cursor: pointer;
-    box-shadow: 0 18px 40px rgba(90, 55, 190, 0.15);
+    box-shadow: 0 18px 40px var(--card-border);
 }
 
 .workshop_card .workshop_stage_title {
@@ -94,15 +130,15 @@ header {
 }
 
 .workshop_card h1 {
-    color: rgb(6, 26, 40);
+    color: var(--navy);
     font-size: 1.6em;
     font-weight: 700;
 }
 
 .workshop_card h2 {
     display: inline-block;
-    color: rgb(90, 55, 190);
-    background-color: rgba(90, 55, 190, 0.08);
+    color: var(--workshop-cardh2);
+    background-color: var(--workshop-border);
     font-size: 0.85em;
     font-weight: 600;
     text-transform: uppercase;
@@ -119,11 +155,11 @@ header {
     gap: 24px;
     margin-top: 15px;
     padding-top: 15px;
-    border-top: 1px solid rgba(6, 26, 40, 0.08);
+    border-top: 1px solid var(--workshop-border);
 }
 
 .workshop_card p {
-    color: rgb(40, 45, 60);
+    color: var(--text);
     font-size: 1.1em;
     line-height: 1.6;
     text-align: justify;
@@ -137,8 +173,8 @@ header {
     height: auto;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 16px var(--workshop-image);
+    border: 1px solid var(--workshop-imgbr);
 }
 
 .firstdesign img {
