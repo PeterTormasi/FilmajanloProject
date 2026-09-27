@@ -1,0 +1,215 @@
+
+:root {
+    --navy: rgb(6, 26, 40);
+    --light-navy: rgb(9, 38, 59);
+    --light-navy-hover: rgb(13, 51, 78);
+    --navy-dark: rgb(0, 16, 32);
+    --purple: rgb(32, 16, 64);
+    --navy-transparent: rgba(6, 26, 40, 0.05);
+
+    --white: rgb(255, 255, 255);
+    --off-white: rgb(252, 249, 251);
+    --light-gray: rgb(227, 231, 237);
+
+    --purple-accent: rgb(95, 65, 205);
+    --purple-accent-hover: rgb(77, 53, 167);
+    
+    --text: rgb(25, 32, 45);
+    --text-light: rgb(255, 255, 255);
+
+    --shadow: rgba(0, 0, 0, 0.1);
+    --glass-bg: rgba(255, 255, 255, 0.25);
+    --glass-border: rgba(255, 255, 255, 0.5);
+    --main-bg: rgba(255, 255, 255, 0);
+    --card-border: rgba(90, 55, 190, 0.15);
+    --workshop-cardh2: rgb(90, 55, 190);
+    --workshop-border:rgba(6, 26, 40, 0.08);
+    --workshop-image: rgba(0, 0, 0, 0.08);
+    --workshop-imgbr: rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+header {
+    padding-top: 7vh;
+    background-color: var(--navy);
+    height: 50vh;
+    background-image: url('images/aiworksshopbg.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    backdrop-filter: blur(5px);
+    background: var(--glass-bg);
+    box-shadow: 0 4px 30px var(--shadow);
+    border: 1px solid var(--glass-border);
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    color: var(--text);
+}
+
+.header-content span {
+    width: 50%;
+    height: 2px;
+    background-color: var(--text);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.header-content p {
+    width: 100%;
+    margin: 0;
+    color: var(--text);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+    padding-top: 4vh;
+    padding-bottom: 7vh;
+    gap: 4vh;
+    backdrop-filter: blur(5px);
+    background: var(--main-bg);
+    box-shadow: 0 4px 30px var(--shadow);
+    border: 1px solid var(--glass-border);
+}
+
+.workshop_card {
+    width: 60%;
+    min-height: 250px;
+    height: auto;
+    padding: 28px 32px;
+    background-color: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px var(--navy-transparent);
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-80px);
+    transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.workshop_card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.workshop_card.is-visible:hover {
+    cursor: pointer;
+    box-shadow: 0 18px 40px var(--card-border);
+}
+
+.workshop_card .workshop_stage_title {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin-bottom: 10px;
+}
+
+.workshop_card h1 {
+    color: var(--navy);
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.workshop_card h2 {
+    display: inline-block;
+    color: var(--workshop-cardh2);
+    background-color: var(--workshop-border);
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.workshop_card_content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--workshop-border);
+}
+
+.workshop_card p {
+    color: var(--text);
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    flex: 1;
+}
+
+.workshop_card ul {
+    color: var(--text);
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.firstdesign {
+    transition: all 0.3s ease-in-out;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px var(--workshop-image);
+    border: 1px solid var(--workshop-imgbr);
+}
+
+.firstdesign img {
+    width: 100px;
+    height: auto;
+}
+
+.firstdesign:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1300px) {
+    .title {
+        text-align: center;
+    }
+
+    .workshop_card {
+        width: 90%;
+    }
+
+    .main {
+        backdrop-filter: none;
+        background: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .header-content {
+        width: 90%;
+    }
+}
