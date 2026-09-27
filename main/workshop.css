@@ -73,6 +73,7 @@ header {
     opacity: 0;
     transform: translateY(-80px);
     transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.3s ease;
+    margin-bottom: 25px;
 }
 
 .workshop_card.is-visible {
@@ -132,21 +133,17 @@ header {
 
 .firstdesign {
     transition: all 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100px;
-    height: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .firstdesign img {
-    width: 100%;
+    width: 100px;
     height: auto;
-    max-height: 240px;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .firstdesign:hover {
@@ -160,7 +157,6 @@ header {
 
     .workshop_card {
         width: 90%;
-        overflow-y: scroll;
     }
 
     .main {

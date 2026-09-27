@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,14 +16,16 @@
             <h1>Film Club</h1>
         </div>
         <div class="menu-container">
-            <svg id="menu-button" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <line x1="4" y1="18" x2="20" y2="18" />
-            </svg>
+            <button id="menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+            </button>
             <ul id="nav-links">
-                <li style="background-color: rgb(107, 64, 224);"><a href="index.html">Home</a></li>
+                <li class="current-tab"><a href="index.html">Home</a></li>
                 <li><a href="comparison.html">Comparison</a></li>
                 <li><a href="workshop.html">Workshop</a></li>
             </ul>
@@ -31,11 +33,11 @@
     </nav>
     <header>
         <div class="header-content">
-            <h1>
+            <h2>
                 <span>Movies.</span><br>
                 <span>Real discussions.</span><br>
                 <span>Together.</span><br>
-            </h1>
+            </h2>
             <p>
                 The Film Club is a place where we share <br>
                 thoughts, discover great films and talk about<br>
@@ -51,11 +53,11 @@
             </a>
         </div>
     </header>
-    <div class="main">
+    <main>
         <div class="title-wrapper">
             <h1 class="title">Featured Films</h1>
             <p>Three great movies, three different stories
-                 - find your next favorite.</p>
+                - find your next favorite.</p>
         </div>
         <div class="cards">
             <article class="card">
@@ -87,13 +89,27 @@
                 </div>
             </article>
         </div>
-        <div class="content-wrapper">
-            <article class="content">
-                <h2>Content Section</h2>
-                <p>This is a section of content that provides more information about the website.</p>
+        <section class="content-wrapper">
+            <article>
+                <div class="head">
+                    <h2>1. A klasszikus kor sötét tükre</h2>
+                    <span></span>
+                </div>
+                <h3>Vetített film: A gonosz érintése (Touch of Evil, 1958) — r.: Orson Welles</h3>
+                <span class="divider-line"></span>
+                <p>Téma: A klasszikus hollywoodi noir fény-árnyék játéka, a korrupció és a határok elmosódása.</p>
+                <p>Welles mesterműve a klasszikus noir korszak lezárása és egyben betetőzése. Megvizsgáljuk a legendás, vágás nélküli nyitójelenetet, valamint a feszültségteremtés vizuális eszközeit.</p>
+                <p>Milyen társadalmi szorongásokat tükröz a film a 1950-es évek Amerikájáról? Hogyan használja Welles a kamera mozgását a morális bizonytalanság kifejezésére?</p>
             </article>
-        </div>
-    </div>
+            <article>
+
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2026 My Website. All rights reserved.</p>
     </footer>

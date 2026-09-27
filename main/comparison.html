@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,24 +16,26 @@
             <h1>Film Club</h1>
         </div>
         <div class="menu-container">
-            <svg id="menu-button" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <line x1="4" y1="18" x2="20" y2="18" />
-            </svg>
+             <button id="menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+            </button>
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li style="background-color: rgb(107, 64, 224);"><a href="comparison.html">Comparison</a></li>
+                <li class="current-tab"><a href="comparison.html">Comparison</a></li>
                 <li><a href="workshop.html">Workshop</a></li>
             </ul>
         </div>
     </nav>
-    <div class="main">
+    <main>
         <div class="title-wrapper">
             <h1>FILM CLUB</h1>
-            <h1>MOVIE COMPARISON</h1>
-            <p>Three different stroies. Three unique experiences.</p>
+            <h2>MOVIE COMPARISON</h2>
+            <p>Three different stories. Three unique experiences.</p>
         </div>
         <div class="table-wrapper">
             <table>
@@ -41,29 +43,29 @@
                     <tr>
                         <td></td>
                         <td>
-                            <div class="img-wrapper" role="link" onclick="navigateTo('images/card1.jpg')">
-                                <img src="images/card1.jpg" alt="">
-                            </div>
-                            <h1>Oppenheimer</h1>
+                            <a class="img-wrapper" href="images/card1.jpg">
+                                <img src="images/card1.jpg" alt="Oppenheimer Moviecover">
+                            </a>
+                            <h2>Oppenheimer</h2>
                         </td>
                         <td>
-                            <div class="img-wrapper" role="link" onclick="navigateTo('images/card2.jpg')">
-                                <img src="images/card2.jpg" alt="">
-                            </div>
-                            <h1>Interstellar</h1>
+                            <a class="img-wrapper" href="images/card2.jpg">
+                                <img src="images/card2.jpg" alt="Interstellar Moviecover">
+                            </a>
+                            <h2>Interstellar</h2>
                         </td>
                         <td>
-                            <div class="img-wrapper" role="link" onclick="navigateTo('images/card3.webp')">
-                                <img src="images/card3.webp" alt="">
-                            </div>
-                            <h1>Truman Show</h1>
+                            <a class="img-wrapper" href="images/card3.webp">
+                                <img src="images/card3.webp" alt="Truman Show Moviecover">
+                            </a>
+                            <h2>Truman Show</h2>
                         </td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>
-                            <h1>Mood</h1>
+                            <h2>Mood</h2>
                         </td>
                         <td>Serious, tense, intense</td>
                         <td>Emotional, grand, thought-provoking</td>
@@ -71,7 +73,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <h1>Genre</h1>
+                            <h2>Genre</h2>
                         </td>
                         <td>Historical drama, biography</td>
                         <td>Sci-fi, adventure, drama</td>
@@ -79,7 +81,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <h1>Who would we recommend it to?</h1>
+                            <h2>Who would we recommend it to?</h2>
                         </td>
                         <td>People who enjoy serious historical films</td>
                         <td>People who enjoy emotional and visually spectacular sci-fi</td>
@@ -88,7 +90,7 @@
                 </tbody>
             </table>
         </div>
-    </div>
+    </main>
     <footer>
         <p>&copy; 2026 My Website. All rights reserved.</p>
     </footer>
