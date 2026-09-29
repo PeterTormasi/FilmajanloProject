@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/index.png">
+    <script src="script.js" defer></script>
+    <script src="sortscript.js" defer></script>
+    <title>Film Club</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-title">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1><a href="../index.html">Film Club</a></h1>
+        </div>
+        <div class="menu-container">
+            <button id="menu-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+            </button>
+            <ul id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li class="current-tab"><a href="selection.html">Selection</a></li>
+                <li><a href="workshop.html">Workshop</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+
+        <section class="content-wrapper">
+            <h2 class="selection-title">Movie selection</h2>
+            <div class="opt-bar">
+                <h2>Filters</h2>
+                <div class="sort-tags">
+                    <div class="sort-opt"><input type="checkbox" name="biopicTag" id="biopicTag" class="sortTag" data-sort="Biopic"> <label for="biopicTag" class="tag-Biopic">Biopic</label></div>
+                </div>
+            </div>
+            <ul id="movie-list">
+                <li class="movie-opt" data-tags="Biopic Historical-Drama Science">
+                    <a class="img-wrapper" href="images/card1.jpg">
+                        <img src="images/card1.jpg" alt="Oppenheimer Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Biopic">Biopic</span>
+                            <span class="tag-Historical-Drama">Historical Drama</span>
+                            <span class="tag-Science">Science</span>
+                        </div>
+                        <h2>[Movie Name]</h2>
+                        <p>[Description]</p>
+                    </div>
+                </li>
+                <li class="movie-opt" data-tags="Historical-Drama Science">
+                    <a class="img-wrapper" href="images/card1.jpg">
+                        <img src="images/card1.jpg" alt="Oppenheimer Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Historical-Drama">Historical Drama</span>
+                            <span class="tag-Science">Science</span>
+                        </div>
+                        <h2>[Movie Name]</h2>
+                        <p>[Description]</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

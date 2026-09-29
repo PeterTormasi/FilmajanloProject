@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/tablestyle.css">
     <link rel="stylesheet" href="src/style.css">
     <link rel="icon" href="src/images/index.png">
+    <script src="src/script.js" defer></script>
     <title>Film Club</title>
 </head>
 
@@ -26,7 +28,7 @@
             </button>
             <ul id="nav-links">
                 <li class="current-tab"><a href="index.html">Home</a></li>
-                <li><a href="src/comparison.html">Comparison</a></li>
+                <li><a href="src/selection.html">Selection</a></li>
                 <li><a href="src/workshop.html">Workshop</a></li>
                 <li><a href="src/sources.html">Sources</a></li>
             </ul>
@@ -105,6 +107,68 @@
                 </div>
             </article>
         </div>
+
+        <section class="content-wrapper">
+            <div class="title-wrapper">
+                <h1>FILM CLUB</h1>
+                <h2>MOVIE COMPARISON</h2>
+                <p>Three different stories. Three unique experiences.</p>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a class="img-wrapper" href="src/images/card1.jpg">
+                                    <img src="src/images/card1.jpg" alt="Oppenheimer Moviecover">
+                                </a>
+                                <h2>Oppenheimer</h2>
+                            </td>
+                            <td>
+                                <a class="img-wrapper" href="src/images/card2.jpg">
+                                    <img src="src/images/card2.jpg" alt="Interstellar Moviecover">
+                                </a>
+                                <h2>Interstellar</h2>
+                            </td>
+                            <td>
+                                <a class="img-wrapper" href="src/images/card3.webp">
+                                    <img src="src/images/card3.webp" alt="Truman Show Moviecover">
+                                </a>
+                                <h2>Truman Show</h2>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2>Mood</h2>
+                            </td>
+                            <td>Serious, tense, intense</td>
+                            <td>Emotional, grand, thought-provoking</td>
+                            <td>Light-hearted, strange, yet unsettling</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Genre</h2>
+                            </td>
+                            <td>Historical drama, biography</td>
+                            <td>Sci-fi, adventure, drama</td>
+                            <td>Drama, comedy, satire</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Cinematographic Technique</h2>
+                            </td>
+                            <td>Dual Color Timelines & IMAX 70mm</td>
+                            <td>Practical Effects & Pipe Organ Score</td>
+                            <td>Hidden Camera Perspective & Fisheye Lens</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <section class="content-wrapper">
             <h2 class="content-title">Film Club programs</h2>
             <article class="program-card">
@@ -114,10 +178,18 @@
                 </div>
                 <h3>Screened Film: Touch of Evil (1958) — Dir.: Orson Welles</h3>
                 <span class="divider-line"></span>
-                <p class="theme"><b>Theme:</b> The play of light and shadow in classic Hollywood noir, corruption, and the blurring of boundaries.</p>
+                <p class="theme"><b>Theme:</b> The play of light and shadow in classic Hollywood noir, corruption, and
+                    the blurring of boundaries.</p>
                 <ul>
-                    <li><p>Introductory Thoughts: Welles' masterpiece serves as both the closure and the pinnacle of the classic noir era. We will analyze the legendary uncut tracking shot at the opening, as well as the visual techniques used to build tension.</p></li>
-                    <li><p>Discussion Focus: What social anxieties does the film reflect about 1950s America? How does Welles use camera movement to express moral ambiguity?</p></li>
+                    <li>
+                        <p>Introductory Thoughts: Welles' masterpiece serves as both the closure and the pinnacle of the
+                            classic noir era. We will analyze the legendary uncut tracking shot at the opening, as well
+                            as the visual techniques used to build tension.</p>
+                    </li>
+                    <li>
+                        <p>Discussion Focus: What social anxieties does the film reflect about 1950s America? How does
+                            Welles use camera movement to express moral ambiguity?</p>
+                    </li>
                 </ul>
             </article>
             <article class="program-card">
@@ -127,10 +199,19 @@
                 </div>
                 <h3>Screened Film: Chungking Express (1994) — Dir.: Wong Kar-wai</h3>
                 <span class="divider-line"></span>
-                <p class="theme"><b>Theme:</b> The birth of neo-noir in a Far Eastern metropolis; urban alienation and passing time.</p>
+                <p class="theme"><b>Theme:</b> The birth of neo-noir in a Far Eastern metropolis; urban alienation and
+                    passing time.</p>
                 <ul>
-                    <li><p>Introductory Thoughts: Wong Kar-wai translates the classic lone detective motif to the neon-lit streets of Hong Kong. The film blends traditional noir melancholy with a modern visual style and popular music.</p></li>
-                    <li><p>Discussion Focus: How does saturated neon light replace traditional noir darkness? Why do everyday objects (expired canned food, flight attendant uniforms) become symbols of seeking connection?</p></li>
+                    <li>
+                        <p>Introductory Thoughts: Wong Kar-wai translates the classic lone detective motif to the
+                            neon-lit streets of Hong Kong. The film blends traditional noir melancholy with a modern
+                            visual style and popular music.</p>
+                    </li>
+                    <li>
+                        <p>Discussion Focus: How does saturated neon light replace traditional noir darkness? Why do
+                            everyday objects (expired canned food, flight attendant uniforms) become symbols of seeking
+                            connection?</p>
+                    </li>
                 </ul>
             </article>
             <article class="program-card">
@@ -142,8 +223,15 @@
                 <span class="divider-line"></span>
                 <p class="theme"><b>Theme:</b> Neo-noir and the deconstruction of narrative structure.</p>
                 <ul>
-                    <li><p>Introductory Thoughts: Nolan revives noir's classic narration-driven storytelling, but makes the bold choice to tell the story in reverse chronological order, unseating the viewer from their usual comfort zone.</p></li>
-                    <li><p>Discussion Focus: How reliable is the memory of a noir protagonist? How does the film's structure force the viewer themselves to become the detective?</p></li>
+                    <li>
+                        <p>Introductory Thoughts: Nolan revives noir's classic narration-driven storytelling, but makes
+                            the bold choice to tell the story in reverse chronological order, unseating the viewer from
+                            their usual comfort zone.</p>
+                    </li>
+                    <li>
+                        <p>Discussion Focus: How reliable is the memory of a noir protagonist? How does the film's
+                            structure force the viewer themselves to become the detective?</p>
+                    </li>
                 </ul>
             </article>
         </section>
@@ -153,7 +241,5 @@
         <p>&copy; 2026 My Website. All rights reserved.</p>
     </footer>
 </body>
-
-<script src="src/script.js"></script>
 
 </html>
