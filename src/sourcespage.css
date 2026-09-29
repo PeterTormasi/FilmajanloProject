@@ -67,6 +67,10 @@
     height: auto;
 }
 
+.workshop_card {
+    height: 230px;
+}
+
 @media (max-width: 800px) {
     .content-wrapper {
         flex-direction: column;
