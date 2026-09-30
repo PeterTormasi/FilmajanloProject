@@ -41,13 +41,218 @@
             <div class="opt-bar">
                 <h2>Filters</h2>
                 <div class="sort-tags">
-                    <div class="sort-opt"><input type="checkbox" name="biopicTag" id="biopicTag" class="sortTag" data-sort="Biopic"> <label for="biopicTag" class="tag-Biopic">Biopic</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="actionTag" id="actionTag" class="sortTag"
+                            data-sort="Action"> <label for="actionTag" class="tag-Action">Action</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="adventureTag" id="adventureTag" class="sortTag"
+                            data-sort="Adventure"> <label for="adventureTag" class="tag-Adventure">Adventure</label>
+                    </div>
+                    <div class="sort-opt"><input type="checkbox" name="biopicTag" id="biopicTag" class="sortTag"
+                            data-sort="Biopic"> <label for="biopicTag" class="tag-Biopic">Biopic</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="classicTag" id="classicTag" class="sortTag"
+                            data-sort="Classic"> <label for="classicTag" class="tag-Classic">Classic</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="crimeTag" id="crimeTag" class="sortTag"
+                            data-sort="Crime"> <label for="crimeTag" class="tag-Crime">Crime</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="cyberpunkTag" id="cyberpunkTag" class="sortTag"
+                            data-sort="Cyberpunk"> <label for="cyberpunkTag" class="tag-Cyberpunk">Cyberpunk</label>
+                    </div>
+                    <div class="sort-opt"><input type="checkbox" name="dramaTag" id="dramaTag" class="sortTag"
+                            data-sort="Drama"> <label for="dramaTag" class="tag-Drama">Drama</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="fantasyTag" id="fantasyTag" class="sortTag"
+                            data-sort="Fantasy"> <label for="fantasyTag" class="tag-Fantasy">Fantasy</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="historicalDramaTag" id="historicalDramaTag"
+                            class="sortTag" data-sort="Historical-Drama"> <label for="historicalDramaTag"
+                            class="tag-Historical-Drama">Historical Drama</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="humanSurvivalTag" id="humanSurvivalTag"
+                            class="sortTag" data-sort="Human-Survival"> <label for="humanSurvivalTag"
+                            class="tag-Human-Survival">Human Survival</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="mediaSatireTag" id="mediaSatireTag"
+                            class="sortTag" data-sort="Media-Satire"> <label for="mediaSatireTag"
+                            class="tag-Media-Satire">Media Satire</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="mysteryTag" id="mysteryTag" class="sortTag"
+                            data-sort="Mystery"> <label for="mysteryTag" class="tag-Mystery">Mystery</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="psychologicalTag" id="psychologicalTag"
+                            class="sortTag" data-sort="Psychological"> <label for="psychologicalTag"
+                            class="tag-Psychological">Psychological</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="psychologicalDramaTag" id="psychologicalDramaTag"
+                            class="sortTag" data-sort="Psychological-Drama"> <label for="psychologicalDramaTag"
+                            class="tag-Psychological-Drama">Psychological Drama</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="realityVIllusionTag" id="realityVIllusionTag"
+                            class="sortTag" data-sort="Reality-v-Illusion"> <label for="realityVIllusionTag"
+                            class="tag-Reality-v-Illusion">Reality v Illusion</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="relativityTag" id="relativityTag" class="sortTag"
+                            data-sort="Relativity"> <label for="relativityTag" class="tag-Relativity">Relativity</label>
+                    </div>
+                    <div class="sort-opt"><input type="checkbox" name="romanceTag" id="romanceTag" class="sortTag"
+                            data-sort="Romance"> <label for="romanceTag" class="tag-Romance">Romance</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="sciFiTag" id="sciFiTag" class="sortTag"
+                            data-sort="Sci-Fi"> <label for="sciFiTag" class="tag-Sci-Fi">Sci-Fi</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="scienceTag" id="scienceTag" class="sortTag"
+                            data-sort="Science"> <label for="scienceTag" class="tag-Science">Science</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="spaceTag" id="spaceTag" class="sortTag"
+                            data-sort="Space"> <label for="spaceTag" class="tag-Space">Space</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="superheroTag" id="superheroTag" class="sortTag"
+                            data-sort="Superhero"> <label for="superheroTag" class="tag-Superhero">Superhero</label>
+                    </div>
+                    <div class="sort-opt"><input type="checkbox" name="thrillerTag" id="thrillerTag" class="sortTag"
+                            data-sort="Thriller"> <label for="thrillerTag" class="tag-Thriller">Thriller</label></div>
+                    <div class="sort-opt"><input type="checkbox" name="warTag" id="warTag" class="sortTag"
+                            data-sort="War"> <label for="warTag" class="tag-War">War</label></div>
                 </div>
             </div>
             <ul id="movie-list">
+                <h2 id="none-selected-prompt">No movies that match your preferences</h2>
+                <li class="movie-opt" data-tags="Sci-Fi Adventure Space">
+                    <a class="img-wrapper" href="images/selection/card1.jpg">
+                        <img src="images/selection/card1.jpg" alt="Interstellar Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Sci-Fi">Sci-Fi</span>
+                            <span class="tag-Adventure">Adventure</span>
+                            <span class="tag-Space">Space</span>
+                        </div>
+                        <h2>Interstellar</h2>
+                        <p>When Earth faces environmental collapse, a group of astronauts undertakes a dangerous mission
+                            through a newly discovered wormhole. They must search across distant galaxies to find a new
+                            habitable home for humanity before time runs out. Along the way, they confront the limits of
+                            science, human resilience, and love.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Action Sci-Fi Thriller">
+                    <a class="img-wrapper" href="images/selection/selection/card2.jpg">
+                        <img src="images/selection/card2.jpg" alt="Inception Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Action">Action</span>
+                            <span class="tag-Sci-Fi">Sci-Fi</span>
+                            <span class="tag-Thriller">Thriller</span>
+                        </div>
+                        <h2>Inception</h2>
+                        <p>A skilled thief who steals valuable corporate secrets from deep within the subconscious
+                            during the dream state is offered a chance at redemption. To clear his name, he must perform
+                            the near-impossible task of planting an idea into a target's mind instead of stealing one.
+                            As the boundaries between dreams and reality blur, dangerous subconscious threats emerge to
+                            stop his team.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Crime Drama Mystery">
+                    <a class="img-wrapper" href="images/selection/card3.jpg">
+                        <img src="images/selection/card3.jpg" alt="The Godfather Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Crime">Crime</span>
+                            <span class="tag-Drama">Drama</span>
+                            <span class="tag-Mystery">Mystery</span>
+                        </div>
+                        <h2>The Godfather</h2>
+                        <p>The aging patriarch of an organized crime dynasty attempts to transfer control of his
+                            clandestine empire to his reluctant youngest son. As rival families threaten their business
+                            and family safety, the reluctant heir is pulled deeper into a violent underworld. It is a
+                            powerful saga of loyalty, betrayal, and the corrupting nature of power.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Action Sci-Fi Superhero">
+                    <a class="img-wrapper" href="images/selection/card4.jpg">
+                        <img src="images/selection/card4.jpg" alt="The Dark Knight Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Action">Action</span>
+                            <span class="tag-Sci-Fi">Sci-Fi</span>
+                            <span class="tag-Superhero">Superhero</span>
+                        </div>
+                        <h2>The Dark Knight</h2>
+                        <p>With the help of trusted allies, Batman maintains a fragile order in Gotham City until a
+                            criminal mastermind known as the Joker unleashes chaos. The villain tests the limits of
+                            justice and forces the vigilante to question the line between hero and villain. As the city
+                            descends into anarchy, difficult sacrifices must be made to save its moral core.</p>
+
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Drama Romance Classic">
+                    <a class="img-wrapper" href="images/selection/card5.jpg">
+                        <img src="images/selection/card5.jpg" alt="Titanic Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Drama">Drama</span>
+                            <span class="tag-Romance">Romance</span>
+                            <span class="tag-Classic">Classic</span>
+                        </div>
+                        <h2>Titanic</h2>
+                        <p>A young aristocratic woman falling under the expectations of an arranged marriage meets a
+                            free-spirited artist aboard the ill-fated luxury liner. Despite their vast class
+                            differences, they form a deep bond during the ship's maiden voyage across the Atlantic.
+                            Their romance turns into a desperate struggle for survival when the ship collides with a
+                            massive iceberg.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Sci-Fi Action Classic">
+                    <a class="img-wrapper" href="images/selection/card6.jpg">
+                        <img src="images/selection/card6.jpg" alt="The Matrix Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Sci-Fi">Sci-Fi</span>
+                            <span class="tag-Action">Action</span>
+                            <span class="tag-Classic">Classic</span>
+                        </div>
+                        <h2>The Matrix</h2>
+                        <p>A computer hacker leads a mundane life until a mysterious woman leads him to an underground
+                            rebellion against intelligent machines. He uncovers the shocking truth that his everyday
+                            reality is an elaborate simulated illusion designed to control humanity. Armed with new
+                            abilities, he joins the fight to liberate the human race from digital bondage.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Biopic Historical-Drama Drama">
+                    <a class="img-wrapper" href="images/selection/card7.jpg">
+                        <img src="images/selection/card7.jpg" alt="Schindler's List Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Biopic">Biopic</span>
+                            <span class="tag-Historical-Drama">Historical Drama</span>
+                            <span class="tag-Drama">Drama</span>
+                        </div>
+                        <h2>Schindler's List</h2>
+                        <p>In German-occupied Poland during World War II, a charismatic businessman arrives looking to
+                            profit from the war effort by opening a factory. As he witnesses the horrific persecution of
+                            the Jewish population by the regime, his motivations gradually turn from profit to humanity.
+                            Using his fortune and influence, he risks everything to protect hundreds of innocent lives.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Adventure Fantasy Action">
+                    <a class="img-wrapper" href="images/selection/card8.jpg">
+                        <img src="images/selection/card8.jpg"
+                            alt="The Lord of the Rings: The Fellowship of the Ring Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Adventure">Adventure</span>
+                            <span class="tag-Fantasy">Fantasy</span>
+                            <span class="tag-Action">Action</span>
+                        </div>
+                        <h2>The Lord of the Rings: The Fellowship of the Ring</h2>
+                        <p>A modest hobbit inherits a powerful ring that holds the fate of his entire world in its
+                            balance. Joined by a diverse group of heroes, he sets out on a perilous journey to destroy
+                            the artifact in the fires where it was forged. Evil forces pursue them relentlessly across
+                            vast regions as their alliance is tested at every step.</p>
+                    </div>
+                </li>
+
                 <li class="movie-opt" data-tags="Biopic Historical-Drama Science">
-                    <a class="img-wrapper" href="images/card1.jpg">
-                        <img src="images/card1.jpg" alt="Oppenheimer Moviecover">
+                    <a class="img-wrapper" href="images/selection/card9.jpg">
+                        <img src="images/selection/card9.jpg" alt="The Imitation Game Moviecover">
                     </a>
                     <div class="text-content">
                         <div class="tags">
@@ -55,21 +260,161 @@
                             <span class="tag-Historical-Drama">Historical Drama</span>
                             <span class="tag-Science">Science</span>
                         </div>
-                        <h2>[Movie Name]</h2>
-                        <p>[Description]</p>
+                        <h2>The Imitation Game</h2>
+                        <p>During the darkest days of World War II, brilliant mathematician Alan Turing is recruited by
+                            British intelligence to crack an unbreakable enemy communication code. Working alongside a
+                            secretive team, he races against time to design a revolutionary calculating machine. His
+                            groundbreaking efforts help turn the tide of the war while he guards a deeply personal
+                            secret.</p>
                     </div>
                 </li>
-                <li class="movie-opt" data-tags="Historical-Drama Science">
-                    <a class="img-wrapper" href="images/card1.jpg">
-                        <img src="images/card1.jpg" alt="Oppenheimer Moviecover">
+
+                <li class="movie-opt" data-tags="Drama Psychological Mystery">
+                    <a class="img-wrapper" href="images/selection/card10.jpg">
+                        <img src="images/selection/card10.jpg" alt="Whiplash Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Drama">Drama</span>
+                            <span class="tag-Psychological">Psychological</span>
+                            <span class="tag-Mystery">Mystery</span>
+                        </div>
+                        <h2>Whiplash</h2>
+                        <p>An ambitious young jazz drummer enrolls at an elite music conservatory with dreams of
+                            achieving greatness. He catches the attention of a notoriously ruthless instructor whose
+                            teaching methods rely on fear, intimidation, and mental pressure. As the student pushes
+                            himself to physical and emotional extremes, his pursuit of perfection threatens to consume
+                            his life.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Psychological Mystery Thriller">
+                    <a class="img-wrapper" href="images/selection/card11.jpg">
+                        <img src="images/selection/card11.jpg" alt="Shutter Island Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Psychological">Psychological</span>
+                            <span class="tag-Mystery">Mystery</span>
+                            <span class="tag-Thriller">Thriller</span>
+                        </div>
+                        <h2>Shutter Island</h2>
+                        <p>A U.S. Marshal and his new partner travel to a remote island asylum for the criminally insane
+                            to investigate the sudden disappearance of a patient. As a powerful hurricane cuts off
+                            communication with the mainland, strange clues and unhelpful staff make the investigation
+                            increasingly dangerous. The officer must unravel the hospital's hidden secrets while
+                            confronting disturbing memories of his own past.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Adventure Drama Space">
+                    <a class="img-wrapper" href="images/selection/card12.jpg">
+                        <img src="images/selection/card12.jpg" alt="The Martian Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Adventure">Adventure</span>
+                            <span class="tag-Drama">Drama</span>
+                            <span class="tag-Space">Space</span>
+                        </div>
+                        <h2>The Martian</h2>
+                        <p>During a fierce storm on Mars, an astronaut is presumed dead and accidentally left behind by
+                            his crew. Finding himself stranded on a hostile planet with limited supplies, he relies on
+                            his ingenuity, scientific knowledge, and spirit to survive. Meanwhile, scientists back on
+                            Earth work tirelessly to plan a daring rescue mission against astronomical odds.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Sci-Fi Thriller Cyberpunk">
+                    <a class="img-wrapper" href="images/selection/card13.jpg">
+                        <img src="images/selection/card13.jpg" alt="Blade Runner 2049 Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Sci-Fi">Sci-Fi</span>
+                            <span class="tag-Thriller">Thriller</span>
+                            <span class="tag-Cyberpunk">Cyberpunk</span>
+                        </div>
+                        <h2>Blade Runner 2049</h2>
+                        <p>Thirty years after the events of the original story, a new law officer unearths a long-buried
+                            secret that could plunge what remains of society into chaos. His discovery leads him on a
+                            quest to track down a former blade runner who has been missing for decades. Together, they
+                            must navigate a dystopian landscape to preserve the delicate truth.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Historical-Drama Drama War">
+                    <a class="img-wrapper" href="images/selection/card14.jpg">
+                        <img src="images/selection/card14.jpg" alt="1917 Moviecover">
                     </a>
                     <div class="text-content">
                         <div class="tags">
                             <span class="tag-Historical-Drama">Historical Drama</span>
+                            <span class="tag-Drama">Drama</span>
+                            <span class="tag-War">War</span>
+                        </div>
+                        <h2>1917</h2>
+                        <p>At the height of the First World War, two young British soldiers are assigned a seemingly
+                            impossible mission behind enemy lines. They must cross dangerous territory to deliver an
+                            urgent message that could stop a deadly ambush and save hundreds of lives. Racing against
+                            the clock, every step brings them face-to-face with the grim realities of the front line.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Action Thriller Crime">
+                    <a class="img-wrapper" href="images/selection/card15.jpg">
+                        <img src="images/selection/card15.jpg" alt="Heat Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Action">Action</span>
+                            <span class="tag-Thriller">Thriller</span>
+                            <span class="tag-Crime">Crime</span>
+                        </div>
+                        <h2>Heat</h2>
+                        <p>A methodical master thief leads an elite crew executing high-stakes heists across Los
+                            Angeles. A obsessed police detective becomes determined to bring the crew down, sparking a
+                            high-stakes game of cat and mouse across the city. As both men struggle to balance their
+                            personal lives with their fixations, their inevitable clash tests their mutual respect and
+                            survival skills.</p>
+                    </div>
+                </li>
+                <li class="movie-opt" data-tags="Biopic Historical-Drama Science">
+                    <a class="img-wrapper" href="images/selection/card16.jpg">
+                        <img src="images/selection/card16.jpg" alt="Oppenheimer Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Biopic">Biopic</span>
+                            <span class="tag-Historical-Drama">Historical Drama</span>
                             <span class="tag-Science">Science</span>
                         </div>
-                        <h2>[Movie Name]</h2>
-                        <p>[Description]</p>
+                        <h2>Oppenheimer</h2>
+                        <p>During World War II, theoretical physicist J. Robert Oppenheimer is appointed to lead the
+                            top-secret Manhattan Project to develop the first nuclear weapons. As scientists race
+                            against time to end the war, Oppenheimer must grapple with the catastrophic power and moral
+                            weight of their creation. The aftermath exposes him to intense political scrutiny and
+                            personal fallout.</p>
+                    </div>
+                </li>
+
+                <li class="movie-opt" data-tags="Media-Satire Psychological-Drama Reality-v-Illusion">
+                    <a class="img-wrapper" href="images/selection/card17.webp">
+                        <img src="images/selection/card17.webp" alt="The Truman Show Moviecover">
+                    </a>
+                    <div class="text-content">
+                        <div class="tags">
+                            <span class="tag-Media-Satire">Media Satire</span>
+                            <span class="tag-Psychological-Drama">Psychological Drama</span>
+                            <span class="tag-Reality-v-Illusion">Reality v Illusion</span>
+                        </div>
+                        <h2>The Truman Show</h2>
+                        <p>An insurance salesman lives a seemingly peaceful life in an idyllic island town, unaware that
+                            his entire world is a massive television set. Every person around him is an actor, and his
+                            daily routine is broadcast live to millions of viewers around the globe. As strange
+                            occurrences reveal cracks in the illusion, he sets out to uncover the truth and escape his
+                            controlled reality.</p>
                     </div>
                 </li>
             </ul>

@@ -480,31 +480,61 @@ main {
     justify-content: center;
 }
 
-.tag-Biopic,
-.tag-Historical-Drama {
-    background-color: #D97706;
+.tag-Sci-Fi,
+.tag-Space,
+.tag-Cyberpunk,
+.tag-Psychological,
+.tag-Mystery,
+.tag-Reality-v-Illusion,
+.tag-Media-Satire,
+.tag-Psychological-Drama {
+    background-color: #1E3A8A;
+    color: var(--text-light);
 }
 
+.tag-Thriller,
+.tag-Crime {
+    background-color: #7C3AED;
+    color: var(--text-light);
+}
+
+.tag-Action,
+.tag-Superhero,
+.tag-War {
+    background-color: #DC2626;
+    color: var(--text-light);
+}
+
+.tag-Biopic,
+.tag-Historical-Drama,
 .tag-Science,
 .tag-Human-Survival {
+    background-color: #D97706;
+    color: var(--text-light);
+}
+
+.tag-Relativity,
+.tag-Adventure {
     background-color: #EA580C;
+    color: var(--text-light);
 }
 
-.tag-Sci-Fi,
-.tag-Relativity {
-    background-color: #1E3A8A;
+.tag-Classic,
+.tag-Drama {
+    background-color: #F59E0B;
+    color: var(--text);
 }
 
-.tag-Media-Satire,
-.tag-Psychological-Drama,
-.tag-Reality-v-Illusion {
-    background-color: #7C3AED;
+.tag-Romance,
+.tag-Fantasy {
+    background-color: #EC4899;
+    color: var(--text-light);
 }
 
 .card .info {
     background-color: var(--white);
     margin-top: auto;
-    height: 45%;
+    height: auto;
     width: 100%;
     transition: transform 0.5s ease-in-out;
     transform: translateY(101%);
@@ -717,10 +747,9 @@ footer {
 }
 
 .sort-tags {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: flex-start;
     width: 95%;
 }
 
@@ -734,6 +763,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-left: 2px solid var(--purple-accent);
 }
 
 input[type=checkbox] {
@@ -756,16 +788,16 @@ input[type=checkbox]:checked {
 }
 
 input[type="checkbox"]::before {
-  content: "";
-  width: 1.5vh;
-  height: 1.5vh;
-  transform: scale(0);
-  background-color: var(--purple-accent);
-  transition: 120ms transform ease-in-out;
+    content: "";
+    width: 1.5vh;
+    height: 1.5vh;
+    transform: scale(0);
+    background-color: var(--purple-accent);
+    transition: 120ms transform ease-in-out;
 }
 
 input[type="checkbox"]:checked::before {
-  transform: scale(1);
+    transform: scale(1);
 }
 
 main:has(#movie-list) {
@@ -793,6 +825,10 @@ main:has(#movie-list) {
     justify-content: space-between;
     gap: 20px;
     flex-direction: column;
+}
+
+#none-selected-prompt {
+    display: none;
 }
 
 .movie-opt {
@@ -864,7 +900,6 @@ main:has(#movie-list) {
     }
 
     .card .info {
-        height: 60%;
         transform: translateY(1%);
     }
 
@@ -877,6 +912,10 @@ main:has(#movie-list) {
 
     .opt-bar {
         border-radius: 0;
+    }
+
+    .sort-tags {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -996,6 +1035,21 @@ main:has(#movie-list) {
         position: absolute;
         margin-top: 0;
         width: 90%;
+    }
+
+    .sort-tags {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .sort-tags {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .sort-opt {
+        border: none;
     }
 }
 
