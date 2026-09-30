@@ -1,6 +1,6 @@
 # FilmajanloProject
 
-Egy webes projekt, ami egy filmklub oldalát mutatja be. Az oldal bemutatja a klub kedvenc filmjeit, egy összehasonlító táblázatot a filmekről, a weboldal elkészülésének műhelynaplóját, valamint a felhasznált források listáját.
+Egy webes iskolai projekt, ami egy filmklub oldalát mutatja be. Az oldal bemutatja a klub kedvenc filmjeit, egy összehasonlító táblázatot a filmekről, a weboldal elkészülésének műhelynaplóját, valamint a felhasznált források listáját.
 
 ## Oldalak
 
